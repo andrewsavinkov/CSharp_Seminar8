@@ -62,7 +62,9 @@ int MinimalRow(int[,] matrix)
     return MinimumOfVector(vectorOfSums);
 }
 
-int[,] testMatrix = GenerateIntMatrix(3, 3);
+int height = 3;
+int width = 4;
+int[,] testMatrix = GenerateIntMatrix(height, width);
 PrintMatrix(testMatrix);
 Console.WriteLine();
 int min = MinimalRow(testMatrix);
