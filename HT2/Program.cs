@@ -11,10 +11,11 @@
 int[,] GenerateIntMatrix(int rows, int columns)
 {
     int[,] inputMatr = new int[rows, columns];
+    Random rnd = new Random();
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
-            inputMatr[i, j] = new Random().Next(0, 11);
+            inputMatr[i, j] = rnd.Next(0, 11);
     }
     return inputMatr;
 }
